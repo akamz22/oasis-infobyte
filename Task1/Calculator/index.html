@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div id="container" class="container">
+      <button class="darkbtn" class="key" id="drk" onclick="darkmode()">Dark Mode</button>
+      <div id='calc' class="calc">
+        <input class="inputtxt" id="inputtxt" placeholder="0" type="text" />
+        <button onclick="clr()" class="key ac">AC</button>
+        <button onclick="del()" class="key del">DEL</button>
+        <button onclick="calculate('%')" class="key">%</button>
+        <button onclick="calculate('/')" class="key">/</button>
+        <button onclick="calculate('7')" class="key">7</button>
+        <button onclick="calculate('8')" class="key">8</button>
+        <button onclick="calculate('9')" class="key">9</button>
+        <button onclick="calculate('*')" class="key">*</button>
+        <button onclick="calculate('4')" class="key">4</button>
+        <button onclick="calculate('5')" class="key">5</button>
+        <button onclick="calculate('6')" class="key">6</button>
+        <button onclick="calculate('-')" class="key">-</button>
+        <button onclick="calculate('1')" class="key">1</button>
+        <button onclick="calculate('2')" class="key">2</button>
+        <button onclick="calculate('3')" class="key">3</button>
+        <button onclick="calculate('+')" class="key">+</button>
+        <button onclick="calculate('.')" class="key">.</button>
+        <button onclick="calculate('0')" class="key">0</button>
+        <button onclick="Result()"id="key" class="key result" id="res">=</button>
+      </div>
+    </div>
+  </body>
+</html>
